@@ -1,0 +1,17 @@
+<p>usertable works!</p>
+<table>
+  <thead>
+    <th>#</th>
+    <th>id</th>
+    <th>email</th>
+    <th>first name</th>
+    <th>last name</th>
+  </thead>
+  <tr *ngFor="let item of data">
+    <td><img src="{{item.avatar}}"> </td>
+    <td>{{item?.id}}</td>
+    <td>{{item?.email}}</td>
+    <td>{{item?.first_name}}</td>
+    <td>{{item?.last_name}}</td>
+  </tr>
+</table>
